@@ -23,7 +23,7 @@ An identifier of the subject who carried out the experiment.
 # Data sets used for creating a tidy data set
 X_test: A 561-feature vector with time and frequency domain variables for the test group
 
-y_test:Indicates the tyoe of activity performed
+y_test:Indicates the type of activity performed
 
 subject_test: Indicates the subject who performed the activities and for whom the data about time and frequency domain variables was recorded
 
