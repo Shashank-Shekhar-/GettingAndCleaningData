@@ -22,10 +22,15 @@ An identifier of the subject who carried out the experiment.
 
 # Data sets used for creating a tidy data set
 X_test: A 561-feature vector with time and frequency domain variables for the test group
+
 y_test:Indicates the tyoe of activity performed
+
 subject_test: Indicates the subject who performed the activities and for whom the data about time and frequency domain variables was recorded
+
 X_train, y_train and subject_train represent corresponding data sets for the training group
+
 features: A set of 561 character variables that indicate the name of the measurements
+
 activity_labels: Character variables that indicate the type of activity
 
 
@@ -34,14 +39,23 @@ activity_labels: Character variables that indicate the type of activity
 
 # Analysis performed to create a tidy data set
 Set working directory to the directory where the data set was downloaded and unzipped
+
 Read test data sets and combine them
+
 Read training data sets and combine them
+
 Combine the test and training data sets to create master data set
+
 Assign column names to the master data set
+
 Subset the master data set to extract only the columns for mean and standard deviation for each measurement - this gives us the final data set
+
 Add a column to the final data set indicating descriptive names for each activity type
+
 Edit the column names of the final data set to make them more understandable and meaningful
-Create an independent tidy data set which has the average of each variable in the final data set for each activity and each subject - This fulfills the criteria of a tidy data set i.e one row per observation of a specific type and one column for each variable measured
+
+Create an independent tidy data set which has the average of each 
+variable in the final data set for each activity and each subject - This fulfills the criteria of a tidy data set i.e one row per observation of a specific type and one column for each variable measured
 
 More details can be found in CodeBook.md
 
@@ -52,5 +66,7 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 #Files in the repository
 run_analysis.R - R code to create the tidy data set
+
 README.md
+
 CodeBook.md
