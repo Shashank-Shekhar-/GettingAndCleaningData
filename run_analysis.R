@@ -104,9 +104,10 @@ library(dplyr)
 ## Grouping by subjectID and activityID
 df <- group_by(finalData, subjectID, activityID, activityType)
 
-## Creating an independent tidy data set 
-## with the average of each variable for each activity and each subject
+## Creating an independent tidy data set with the average of each variable for each activity and each subject
 tidyData <- data.frame(summarise_each(df,funs(mean)))
+
+## Write tidy data to a text file
 write.table(tidyData, "tidyData.txt", sep="\t", row.names = FALSE)
 #####################################################################################
 #####################################################################################
